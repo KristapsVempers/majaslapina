@@ -1,0 +1,6 @@
+﻿Atrasti 5544 ieraksti, no kuriem 5165 ir ar precīzi atpazītām koordinātēm.
+Atlases nosacījumu apraksts.
+Notikuma datums no 01.01.2021 00:00 līdz 31.12.2021 23:59 
+Notikuma veids: Ceļu satiksmes negadījumi (CSNg)
+Notikuma vieta: Visa Latvija
+Notikuma juridiskā kvalifikācija: Visi panti
