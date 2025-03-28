@@ -1,2 +1,2 @@
-# M-jaslapa
-Visvēsākā mājaslapa
+# majaslapina
+Superlapa majaslapa
