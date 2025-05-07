@@ -1,38 +1,88 @@
-/* Fona attēls navigācijai ar pilnu redzamību */
+body {
+    font-family: sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 30px;
+    text-align: center;
+    font-size: 2em;
+}
+
+/* Navigation bar */
 nav {
     background-image: url("Images/skola.jpg");
     background-repeat: no-repeat;
-    background-size: contain;     /* REDZAMA PILNĀ IZMERĀ */
+    background-size: 50%; /* 0.5x skolas attēls */
     background-position: center;
-    background-color: #333;       /* Tumšs fons aiz attēla, ja tas mazāks */
-    padding: 40px;
+    padding: 50px 20px;
     text-align: center;
+    border-bottom: 2px solid #ccc;
 }
 
-/* Satura rādītāja stils */
 nav ol {
     list-style-type: decimal;
-    font-size: 22px;             /* lielāks teksts */
-    font-weight: bold;
-    color: white;
-    padding-left: 0;
+    font-size: 22px;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: inline-block;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px #999;
 }
 
 nav a {
-    color: white;
     text-decoration: none;
-    padding: 10px;
-    display: inline-block;
+    color: #003366;
+    font-weight: bold;
 }
 
 nav a:hover {
-    text-decoration: underline;
-    background-color: rgba(255, 255, 255, 0.2);
+    color: darkred;
 }
 
-/* Lai neradās baltas malas */
-body {
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
+/* Article sections */
+article {
+    padding: 30px;
+    line-height: 1.6;
+    font-size: 18px;
+    max-width: 900px;
+    margin: auto;
+    background-color: white;
+}
+
+/* Section headings */
+article h2 {
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 10px;
+    margin-top: 50px;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+table, th, td {
+    border: 1px solid #666;
+    padding: 8px;
+    text-align: left;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #222;
+}
+
+footer img {
+    height: 60px;
 }
