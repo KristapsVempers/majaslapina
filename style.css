@@ -1,8 +1,38 @@
-body {
+/* Fona attēls navigācijai ar pilnu redzamību */
+nav {
     background-image: url("Images/skola.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;     /* REDZAMA PILNĀ IZMERĀ */
     background-position: center;
+    background-color: #333;       /* Tumšs fons aiz attēla, ja tas mazāks */
+    padding: 40px;
+    text-align: center;
+}
+
+/* Satura rādītāja stils */
+nav ol {
+    list-style-type: decimal;
+    font-size: 22px;             /* lielāks teksts */
+    font-weight: bold;
+    color: white;
+    padding-left: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Lai neradās baltas malas */
+body {
     margin: 0;
     padding: 0;
+    font-family: sans-serif;
 }
