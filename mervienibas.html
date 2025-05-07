@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mērvienības</title>
+    <style>
+        body {
+            background-image: url("Images/cipari.jpg");
+            font-family: sans-serif;
+        }
+        form {
+            font-size: 20px;
+            background-color: rgb(220,220,0);
+            padding: 20px;
+            width: fit-content;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Informācijas daudzuma mērvienības</h1>
+
+<form>
+    <p>1 baits = <input type="text" id="bit" size="5"> biti</p>
+    <p>1 kilobaits = <input type="text" id="kb" size="5"> baiti</p>
+    <p>1 megabaits = <input type="text" id="mb" size="5"> kilobaiti</p>
+
+    <button type="button" onclick="mer();">Rēķināt</button>
+</form>
+
+<script>
+function mer() {
+    document.getElementById("bit").value = 8;
+    document.getElementById("kb").value = 1024;
+    document.getElementById("mb").value = 1024;
+}
+</script>
+
+</body>
+</html>
