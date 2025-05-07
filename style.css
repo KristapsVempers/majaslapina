@@ -1,12 +1,8 @@
 nav {
     background-image: url("Images/skola.jpg");
-    background-repeat: repeat;
+    background-repeat: no-repeat;
     background-size: cover;
-
-}
-
-nav ol {
-    list-style-type: decimal;
-    font-size: 18px;
+    background-position: center;
+    padding: 30px;
     color: white;
 }
