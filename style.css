@@ -1,8 +1,8 @@
-nav {
+body {
     background-image: url("Images/skola.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    padding: 30px;
-    color: white;
+    margin: 0;
+    padding: 0;
 }
