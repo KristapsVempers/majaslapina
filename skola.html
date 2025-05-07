@@ -1,65 +1,68 @@
 <!DOCTYPE html>
-<html>
+<html lang="lv">
 <head>
-    <title>Mērvienības</title>
-    <style>
-        body {
-            background-image: url("Images/cipari.jpg");
-            background-size: cover;
-            font-family: sans-serif;
-        }
-
-        form {
-            font-size: 20px;
-            background-color: rgb(220,220,0);
-            padding: 20px;
-            width: fit-content;
-            margin: 50px;
-            border-radius: 10px;
-        }
-
-        input[type="text"] {
-            width: 100px;
-        }
-    </style>
+<meta charset="UTF-8">
+<title>Skola</title>
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<h1>Informācijas daudzuma mērvienības</h1>
+<header>
+<h1>Rīgas Valsts 1. ģimnāzija</h1>
+</header>
 
-<form>
-    <p>
-        Cik ir <strong>gigabaiti (GB)</strong>? 
-        <input type="text" id="gb"> 
-    </p>
+<nav>
+<ol>
+<li><a href="#vesture">Vēsture</a></li>
+<li><a href="#nosaukumi">Skolas nosaukumu maiņas</a></li>
+<li><a href="#vaditaji">Zināmie skolas vadītāji (1229—1804)</a></li>
+<li><a href="#absolventi">Skolas absolventi</a></li>
+</ol>
+</nav>
 
-    <p>
-        Tas ir 
-        <input type="text" id="mb"> 
-        megabaiti (MB)
-    </p>
+<article>
 
-    <p>
-        Un arī 
-        <input type="text" id="mib"> 
-        mebibaiti (MiB)
-    </p>
+<section id="vesture">
+<h2>Vēsture</h2>
+<p>Šeit būs vēstures teksts, daudz teksta par Doma skolu, licejiem un visiem tiem vecajiem kungiem.</p>
+</section>
 
-    <button type="button" onclick="rekinat()">Rēķināt</button>
-</form>
+<section id="nosaukumi">
+<h2>Skolas nosaukumu maiņas</h2>
+<ul>
+<li>1211.—1528. — Domkapitula klostera skola</li>
+<li>1528.—1631. — Rīgas pilsētas Domskola</li>
+<li>1631.—1710. — Rīgas Akadēmiskā ģimnāzija</li>
+<!-- utt... -->
+<li>1996.—pašlaik — Rīgas Valsts 1. ģimnāzija</li>
+</ul>
+</section>
 
-<script>
-function rekinat() {
-    let gb = parseFloat(document.getElementById("gb").value);
-    
-    if (!isNaN(gb)) {
-        document.getElementById("mb").value = gb * 1000;
-        document.getElementById("mib").value = gb * 1024;
-    } else {
-        alert("Ievadi skaitli GB laukā!");
-    }
-}
-</script>
+<section id="vaditaji">
+<h2>Zināmie skolas vadītāji (1229—1804)</h2>
+<table border="1">
+<tr><th>Laiks</th><th>Vadītājs</th></tr>
+<tr><td>ap 1239.</td><td>Heinrihs</td></tr>
+<tr><td>1528.—1538.</td><td>Jakobs Batuss</td></tr>
+<tr><td>1538—?</td><td>Retgers Pistorijs</td></tr>
+<!-- utt... -->
+</table>
+</section>
+
+<section id="absolventi">
+<h2>Skolas absolventi</h2>
+<p>Rainis mācījās šajā skolā. Viņš bija diezgan stilīgs. Un gudrs. Un dzejnieks.</p>
+<p><a href="https://www.literatura.lv/lv/person/Rainis/873382" target="_blank">Lasīt par Raini šeit (ne wikipēdija)</a></p>
+</section>
+
+</article>
+
+<footer>
+<a href="https://www.r1g.edu.lv/" target="_blank">
+<img src="Images/logo.png" alt="Skolas logo" style="height:80px;">
+</a>
+</footer>
 
 </body>
 </html>
